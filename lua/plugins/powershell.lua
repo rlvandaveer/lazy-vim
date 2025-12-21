@@ -12,6 +12,6 @@ return {
     -- Optional: Add keybinding for code evaluation
     vim.keymap.set({ "n", "x" }, "<leader>E", function()
       require("powershell").eval()
-    end, { desc = "Eval PowerShell code", ft = "ps1" })
+    end, { desc = "Eval PowerShell code", buffer = true })
   end,
 }
