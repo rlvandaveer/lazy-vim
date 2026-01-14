@@ -15,6 +15,10 @@ return {
       italic = true,
     }
 
+    opts.terminal = {
+      shell = "pwsh -NoLogo",
+    }
+
     return opts
   end,
 }
