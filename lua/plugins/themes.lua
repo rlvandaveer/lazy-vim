@@ -1,12 +1,16 @@
+-- https://vimcolorschemes.com/i/top
 return {
+  { "AlessandroYorba/Alduin" },
   { "morhetz/gruvbox" },
+  { "pineapplegiant/spaceduck" },
   { "ptdewey/darkearth-nvim" },
-  { "sainnhe/everforest" },
+  { "raphamorim/lucario" },
   {
     "RostislavArts/naysayer.nvim",
     lazy = false,
     priority = 1000,
   },
+  { "sainnhe/everforest" },
   {
     "scottmckendry/cyberdream.nvim",
     lazy = false,
@@ -16,5 +20,18 @@ return {
     "srcery-colors/srcery-vim",
     lazy = false,
     priority = 1000,
+  },
+  {
+    "ray-x/aurora",
+    init = function()
+      vim.g.aurora_italic = 1
+      vim.g.aurora_transparent = 1
+      vim.g.aurora_bold = 1
+    end,
+    -- config = function()
+    --   vim.cmd.colorscheme("aurora")
+    --   override defaults
+    --   vim.api.nvim_set_hl(0, "@number", { fg = "#e933e3" })
+    -- end,
   },
 }
