@@ -15,6 +15,13 @@ return {
       italic = true,
     }
 
+    opts.picker = opts.picker or {}
+    opts.picker.sources = opts.picker.sources or {}
+    opts.picker.sources.grep = {
+      hidden = true,
+      ignored = true,
+    }
+
     opts.terminal = {
       shell = "pwsh -NoLogo",
     }
